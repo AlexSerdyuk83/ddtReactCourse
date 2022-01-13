@@ -1,6 +1,6 @@
 import './App.scss';
 import ActualDate from "./Components/ActualDate";
-import {useEffect, useState} from "react";
+import {useEffect, useLayoutEffect, useState} from "react";
 import {getDate} from "./utilits";
 import ShowText from "./Components/ShowText";
 import Button from "./Components/Button";
@@ -24,7 +24,7 @@ function App() {
   }
 
   return (
-    <div id="App" className="container-sm bg-dark vh-100 text-light">
+    actualDate && <div id="App" className="container-sm bg-dark vh-100 text-light">
       <div className="row greater-block">
           <p className="text-center greater-text">Welcome in addReactCourse!!!</p>
       </div>
