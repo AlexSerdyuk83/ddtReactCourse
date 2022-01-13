@@ -24,16 +24,20 @@ function App() {
   }
 
   return (
-    actualDate && <div id="App" className="container-sm bg-dark vh-100 text-light">
-      <div className="row greater-block">
-          <p className="text-center greater-text">Welcome in addReactCourse!!!</p>
-      </div>
-        <ActualDate date={actualDate}/>
-        <Button text={'Click me'} onClickHandler={clickHandler}/>
+    <>
       {
-        showGreeting && <ShowText text={'The impossible is possible!'}/>
+        actualDate && <div id="App" className="container-sm bg-dark vh-100 text-light">
+          <div className="row greater-block">
+            <p className="text-center greater-text">Welcome in addReactCourse!!!</p>
+          </div>
+          <ActualDate date={actualDate}/>
+          <Button text={'Click me'} onClickHandler={clickHandler}/>
+          {
+            showGreeting && <ShowText text={'The impossible is possible!'}/>
+          }
+        </div>
       }
-    </div>
+    </>
   )
 }
 
