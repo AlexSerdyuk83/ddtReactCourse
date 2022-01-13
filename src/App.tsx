@@ -1,6 +1,6 @@
 import './App.scss';
 import ActualDate from "./Components/ActualDate";
-import {useEffect, useLayoutEffect, useState} from "react";
+import {useEffect, useState} from "react";
 import {getDate} from "./utilits";
 import ShowText from "./Components/ShowText";
 import Button from "./Components/Button";
